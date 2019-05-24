@@ -3,14 +3,14 @@
 Lisp, ML,
 
 
-Haskell, Scala, Erlang, Elixir, Clojure…
+Haskell, Scala, Erlang, Elixir, Clojure, OCaml…
 
 
 ----------------
 
 **Qui compilent en JS**
 
-Elm, ClojureScript
+Reason, Elm, ClojureScript
 
 ----------------
 

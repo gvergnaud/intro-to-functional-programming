@@ -72,11 +72,11 @@ module.exports = (grunt) ->
                         'js/**'
                         'resources/**'
                     ]
-                    dest: 'dist/'
+                    dest: 'docs/'
                 },{
                     expand: true
                     src: ['index.html']
-                    dest: 'dist/'
+                    dest: 'docs/'
                     filter: 'isFile'
                 }]
 

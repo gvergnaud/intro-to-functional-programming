@@ -2,7 +2,7 @@
 
 Signature de function qui décrit son type
 
-```
+```hs
 
   multiplyByTwo :: Int -> Int
   const multiplyByTwo = x => x * 2

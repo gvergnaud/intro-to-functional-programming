@@ -2,7 +2,7 @@
 
 C'est très pratique pour composer des functions.
 
-```
+```hs
 length :: String -> Int
 const length = str => str.length
 
