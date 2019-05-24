@@ -17,7 +17,7 @@
     {
         "filename": "2-5-pourquoi-mpjme.md",
         "attr": {
-            "data-background": "../resources/mpjme-relevant.png"
+            "data-background": "resources/mpjme-relevant.png"
         }
     },
     "2-6-1-pourquoi-fp.md",
@@ -69,7 +69,7 @@
     {
         "filename": "4-7-4-parenthese-simplity-vs-complexity.md",
         "attr": {
-            "data-background": "../resources/simple-made-easy.png"
+            "data-background": "resources/simple-made-easy.png"
         }
     },
     "4-8-2-declaratif-tp.md",
@@ -109,14 +109,14 @@
     {
         "filename": "5-3-3-what-is-composition-math.md",
         "attr": {
-            "data-background": "../resources/DontFearTheMonad.png"
+            "data-background": "resources/DontFearTheMonad.png"
         }
     },
     "5-3-4-what-is-composition-no.md",
     {
         "filename": "5-3-5-what-is-composition-lego.md",
         "attr": {
-            "data-background": "../resources/lego.jpg"
+            "data-background": "resources/lego.jpg"
         }
     },
     "5-3-6-composition.md",
@@ -134,7 +134,7 @@
     {
         "filename": "5-4-1-curry.md",
         "attr": {
-            "data-background": "../resources/curry.jpg"
+            "data-background": "resources/curry.jpg"
         }
     },
     {
@@ -154,7 +154,7 @@
     {
         "filename": "6-1-imutability.md",
         "attr": {
-            "data-background": "../resources/statue.jpg"
+            "data-background": "resources/statue.jpg"
         }
     },
     "6-2-imutability.md",
