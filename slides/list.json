@@ -1,0 +1,179 @@
+[
+    "index.md",
+    "1-objectifs.md",
+    "2-1-sondage.md",
+    {
+        "filename": "2-2-pourquoi-m-interesser-au-fp.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/1M9fmo1WAFVK0.gif"
+        }
+    },
+    "2-3-1-pourquoi-js-fatigue.md",
+    "2-3-2-pourquoi-js-fatigue.md",
+    {
+        "filename": "2-4-pourquoi-solution.md",
+        "attr": {}
+    },
+    {
+        "filename": "2-5-pourquoi-mpjme.md",
+        "attr": {
+            "data-background": "../resources/mpjme-relevant.png"
+        }
+    },
+    "2-6-1-pourquoi-fp.md",
+    "2-6-2-pourquoi-fp.md",
+    "3-1-citation-ericeliott.md",
+    "3-2-1-lang-example.md",
+    "3-2-2-lang-example.md",
+    {
+        "filename": "4-1-what.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/cx5UoGpRwLra0.gif"
+        }
+    },
+    "4-2-what-rules.md",
+    "4-3-1-imperatif-vs-declaratif.md",
+    "4-3-2-1-filter.md",
+    "4-3-2-2-imperatif-definition.md",
+    "4-3-3-1-filter-declaratif.md",
+    {
+        "filename": "4-3-3-2-filter-declaratif.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/sN4xqr7YG4pm8.gif"
+        }
+    },
+    "4-3-3-3-filter-declaratif.md",
+    "4-3-4-declaratif-over-imperatif.md",
+    "4-3-5-1-hof.md",
+    "4-3-5-2-hof-what.md",
+    "4-3-6-filter-recursion.md",
+    "4-3-7-filter-proto.md",
+    "4-4-1-map.md",
+    "4-4-2-map-declaratif.md",
+    "4-4-3-map-declaratif-imple.md",
+    "4-5-1-reduce.md",
+    "4-5-2-reduce-declaratif.md",
+    "4-5-3-reduce-declaratif-imple.md",
+    "4-6-1-chaining.md",
+    "4-6-2-chaining-imperatif.md",
+    {
+        "filename": "4-6-3-chaining-imperatif-conclusion.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/tO5ddHjpXB6lG.gif"
+        }
+    },
+    "4-6-4-chaining-declaratif.md",
+    "4-7-1-conclusions-sur-l-imperatif.md",
+    "4-7-2-conclusions-sur-l-imperatif.md",
+    "4-7-3-conclusions-sur-l-imperatif.md",
+    {
+        "filename": "4-7-4-parenthese-simplity-vs-complexity.md",
+        "attr": {
+            "data-background": "../resources/simple-made-easy.png"
+        }
+    },
+    "4-8-2-declaratif-tp.md",
+    "5-1-pure-composable.md",
+    "5-2-1-pure.md",
+    "5-2-2-pure.md",
+    "5-2-3-pure.md",
+    "5-2-4-pure-doesnt-interact.md",
+    "5-2-5-pure-no-sideeffect.md",
+    "5-2-6-1-pure-why.md",
+    {
+        "filename": "5-2-6-2-1-pure-why.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/tIeCLkB8geYtW.gif"
+        }
+    },
+    "5-2-6-2-2-pure-functions-as-data.md",
+    "5-2-6-3-pure-test.md",
+    "5-2-6-4-pure-test.md",
+    "5-2-6-5-pure-test.md",
+    "5-2-7-pure-on-peut-rien-faire.md",
+    "5-2-8-pure-brief-side-effect.md",
+    "5-2-9-pure-brief-side-effect.md",
+    "5-2-10-pure-brief-side-effect.md",
+    "5-2-11-pure-sideeffect-flow.md",
+    "5-2-12-pure-sideeffect-flow.md",
+    "5-2-13-pure-sideeffect-flow.md",
+    "5-2-14-pure-sideeffect-flow.md",
+    "5-2-15-pure-sideeffect-flow.md",
+    {
+        "filename": "5-3-1-composition.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/mGj3SVN7xbPQ4.gif"
+        }
+    },
+    "5-3-2-what-is-composition.md",
+    {
+        "filename": "5-3-3-what-is-composition-math.md",
+        "attr": {
+            "data-background": "../resources/DontFearTheMonad.png"
+        }
+    },
+    "5-3-4-what-is-composition-no.md",
+    {
+        "filename": "5-3-5-what-is-composition-lego.md",
+        "attr": {
+            "data-background": "../resources/lego.jpg"
+        }
+    },
+    "5-3-6-composition.md",
+    "5-3-7-composition.md",
+    "5-3-8-composition.md",
+    "5-3-9-1-composition-emboitage.md",
+    "5-3-9-2-composition-citation.md",
+    "5-3-10-parenthese-hindley-milner.md",
+    "5-3-11-parenthese-hindley-milner.md",
+    "5-3-12-parenthese-hindley-milner-example.md",
+    "5-3-13-parenthese-hindley-milner-hoogle.md",
+    "5-3-14-parenthese-hindley-milner-composition.md",
+    "5-3-15-parenthese-hindley-milner-composition.md",
+    "5-3-16-composition-problem.md",
+    {
+        "filename": "5-4-1-curry.md",
+        "attr": {
+            "data-background": "../resources/curry.jpg"
+        }
+    },
+    {
+        "filename": "5-4-2-curry-def.md"
+    },
+    "5-4-3-curry-example.md",
+    "5-4-4-curry-es6.md",
+    "5-4-5-curry-es6-not-enought.md",
+    "5-4-6-curry-haskellcurry.md",
+    {
+        "filename": "5-5-tp2.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/oZmk8DX9H0foA.gif"
+        }
+    },
+    "5-6-reprenons.md",
+    {
+        "filename": "6-1-imutability.md",
+        "attr": {
+            "data-background": "../resources/statue.jpg"
+        }
+    },
+    "6-2-imutability.md",
+    "6-3-imutability.md",
+    "6-4-1-imutability.md",
+    "6-4-2-imutability-const.md",
+    "6-5-imutability-array.md",
+    "6-6-imutability-object.md",
+    "6-7-imutability-lens.md",
+    "6-8-imutability-immutablejs.md",
+
+    "end-1-lol.md",
+    {
+        "filename": "end-2-lol.md",
+        "attr": {
+            "data-background": "http://i.giphy.com/11RUijoqnc1yJW.gif"
+        }
+    },
+    "end-3-thanks.md",
+    "end-4-resources.md",
+    "end-5-contact.md"
+]

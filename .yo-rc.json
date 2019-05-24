@@ -1,0 +1,9 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Introduction au Functional Programming",
+    "packageVersion": "0.0.0",
+    "revealTheme": "serif",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}
