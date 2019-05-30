@@ -1,3 +1,0 @@
-## Merci
-
-#### de votre attention

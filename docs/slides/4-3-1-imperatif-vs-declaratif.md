@@ -1,2 +1,0 @@
-## I
-## Impératif vs Déclaratif

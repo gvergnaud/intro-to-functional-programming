@@ -1,25 +1,34 @@
-### Une petite introduction au
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">### Une petite introduction au
 ## Functional Programming
 
 <p style="font-size:.7em">Slides: https://gvergnaud.github.io/intro-to-functional-programming</p>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ##  Objectifs
 
 - Comprendre ce qui se cache sous le terme "Functional"
 
 - Donner des pistes à explorer
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Petites questions
 (vite fait)
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   Pourquoi ?
@@ -27,23 +36,17 @@
 
 
 <!-- .slide: data-background="http://i.giphy.com/1M9fmo1WAFVK0.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 - de nouveaux frameworks tous les ans
 
 - ceux des années précédentes deviennent obsolètes
 
 - Que doit on apprendre qui nous serve à long terme ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## C'est JS-Fatiguant ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Solution
 
 - Arrêter de passer du temps à apprendre des **API**
@@ -52,9 +55,7 @@
 
 - Se concentrer sur les **design patterns**
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h3 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   MPJME - How to stay relevant as a developer
 </h3>
@@ -65,14 +66,10 @@
 
 
 <!-- .slide: data-background="resources/mpjme-relevant.png" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### la promesse du functional programming
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 un code avec
 
 ### Moins de bug
@@ -81,16 +78,12 @@ parce que plus facile à comprendre
 ### en moins de temps
 parce que plus facile à réutiliser
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 >“Developers proficient in functional programming are going to be in large demand in the very near future.”
 
 **Eric Elliott** - [_The Two pillars of Javascript - Part 2_](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Quelque langage functionnels
 
 Lisp, ML,
@@ -111,18 +104,14 @@ Reason, Elm, ClojureScript
 
 le JS
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Mais
 
 on peut faire du fonctional dans *presque* tous les languages.
 
 Ruby, Python, ..., même PHP !
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   Ok mais c'est quoi ? 
@@ -130,9 +119,7 @@ Ruby, Python, ..., même PHP !
 
 
 <!-- .slide: data-background="http://i.giphy.com/cx5UoGpRwLra0.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 Préférer un style **déclaratif** à un style impératif
 
 +
@@ -144,18 +131,12 @@ découper son code en petites **fonctions** réutilisables et composables.
 Ne **jamais** mutter les données
 
 
-Note:
-Ça permet de monter facilement en abstraction et d’arreter de tout micro manager.
-
-
----
-
+<aside class="notes"><p>Ça permet de monter facilement en abstraction et d’arreter de tout micro manager.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
 ## I
 ## Impératif vs Déclaratif
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ###  Filtrer un tableau
 
 Impératif :
@@ -177,16 +158,13 @@ console.log(oldUsers)
 Oulala qu'est ce que ça micromanage
 
 
-Note:
-
-Micro management =
-- déclaration de variables temporaire,
-- for loops,
-- if statements
-
-
----
-
+<aside class="notes"><p>Micro management =</p>
+<ul>
+<li>déclaration de variables temporaire,</li>
+<li>for loops,</li>
+<li>if statements</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
 ### les symptomes de l'impératif
 
 - déclaration de variables temporaires
@@ -195,9 +173,7 @@ Micro management =
   - for loops
   - if/else statements
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ####  Filtrer un tableau
 
 Déclaratif :
@@ -210,15 +186,11 @@ console.log(oldUsers)
 // => [{ age: 31 }]
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 
 
 <!-- .slide: data-background="http://i.giphy.com/sN4xqr7YG4pm8.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ####  Filtrer un tableau
 
 Déclaratif :
@@ -239,9 +211,7 @@ plutôt que de dire ce qu'il se passe
 
 Mais ou est donc définie la function filter ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 **Le déclaratif est construit sur de l’impératif.**
 
 ```js
@@ -257,9 +227,7 @@ function filter(predicate, xs) {
 
 filter est ce qu'on appelle une **Higher Order Function**
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Higher Order Function
 
 > “Its like the word Quintessential :
@@ -270,9 +238,7 @@ filter est ce qu'on appelle une **Higher Order Function**
 
 [Youtube - Higher Order Functions](https://www.youtube.com/watch?v=BMUiFMZr7vk)
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Higher Order Function
 
 Une fonction qui :
@@ -284,9 +250,7 @@ Une fonction qui :
 
 cette deuxième fonction va **décrire** le comportement **spécifique** de la première.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Je vous ai menti
 (un peu)
 
@@ -305,17 +269,13 @@ const filter = (f, [x, ...rest]) =>
 
 grâce à la recursion !
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 **Filter est build-in sur Array.prototype**
 ```js
 const oldUsers = users.filter(user => user.age > 30)
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Transformer un tableau
 
 >C'est à dire transformer chacun des items d'un tableau pour en créer un nouveau.
@@ -334,9 +294,7 @@ console.log(userAges)
 // => [20, 31, 17]
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ####  Transformer un tableau
 
 Déclaratif : la méthode **map()**
@@ -356,9 +314,7 @@ console.log(userAges)
 // => [20, 31, 17]
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ####  Transformer un tableau
 
 implémentation de map
@@ -379,9 +335,7 @@ const map = (f, [x, ...rest]) =>
   rest.length ? [f(x), ...map(rest)] : [f(x)]
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ###  Accumuler un tableau
 
 >C'est à dire transformer les items d'un tableau en une seule valeur.
@@ -401,9 +355,7 @@ console.log(sum)
 // => 68
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Accumuler un tableau
 
 Déclaratif : la méthode **reduce()**
@@ -424,9 +376,7 @@ console.log(sum)
 // => 68
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Accumuler un tableau
 
 Implémentation de reduce
@@ -448,16 +398,12 @@ const reduce = (f, acc, [x, ...rest]) =>
   rest.length ? reduce(f, f(acc, x), rest) : f(acc, x)
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Chainer ces modifications
 
 C'est maintenant que ça prend tout son sens...
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ```js
 // users :: [ { name :: String, age :: Int } ]
 
@@ -479,15 +425,11 @@ for (let j = 0; j < filteredUsers.length; j++) {
 
 Qu'est ce que ça fait en un coup d'oeil ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 
 
 <!-- .slide: data-background="http://i.giphy.com/tO5ddHjpXB6lG.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ```js
 const averageAge = users
   .filter(user => user.name === 'Kevin')
@@ -497,34 +439,26 @@ const averageAge = users
 
 Et maintenant ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### En conclusion
 
 - **L'Impératif, visuellement, c'est pas facile.**
 
 la spécificité du bout de code est noyée dans les détails d'implémentation génériques.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### En conclusion
 
 - **Impératif = code peu réutilisable**
 
 nos boucles sont spécifiquement faite pour notre problème actuel.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### En conclusion
 
 - **Impératif = code complexe**
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   Simplicity vs Complexity
 </h2>
@@ -536,29 +470,21 @@ nos boucles sont spécifiquement faite pour notre problème actuel.
 
 
 <!-- .slide: data-background="resources/simple-made-easy.png" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 # T.P.
 
 ### Parser de la NASA !
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## II
 ## Des petites functions réutilisables
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### fonction pure
 
 >une fonction pure (ou stateless) est une fonction qui respecte quelques petites règles.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### une fonction pure
 
 prend des paramètres et retourne un résultat
@@ -578,9 +504,7 @@ add(2, 2, v => console.log(v))
 // "4"
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### une fonction pure
 
 n'altère pas les paramètres qui lui sont passés
@@ -605,9 +529,7 @@ addValue(myArray, 4)
 
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### une fonction pure
 
 n'intéragit pas avec le scope dans lequel elle se trouve
@@ -627,9 +549,7 @@ isOdd()
 
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### une fonction pure
 
 n'a pas d'effet de bord
@@ -642,9 +562,7 @@ const getUsers = (callback) => {
 }
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Pourquoi c'est chouette ?
 
 
@@ -656,22 +574,16 @@ Facile à **comprendre** car pas de dépendences externes.
 
 Pas de comportement chelou.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 
 
 <!-- .slide: data-background="http://i.giphy.com/tIeCLkB8geYtW.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### function pure
 
 ## Fonction as Data
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Ptit test
 
 
@@ -681,9 +593,7 @@ const isThisPure = x => x * 2
 
 alors ? pure ou pas pure ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Ptit test
 
 
@@ -693,9 +603,7 @@ const isThisPure = str => {
 }
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Ptit test
 
 
@@ -706,19 +614,13 @@ const isThisPure = str => {
 }
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### “Mais avec ça on peut rien faire !”
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Oui, c'est vrai.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 Ce qui nous intéresse dans un programme c'est les side effects.
 
 - Render quelque chose sur la page
@@ -727,14 +629,10 @@ Ce qui nous intéresse dans un programme c'est les side effects.
 
 On va pas loin avec des fonctions pures.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 Mais les side effects sont aussi les plus susceptibles de bugger.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Flow d'un code functional
 
 ```
@@ -745,22 +643,15 @@ _
 
 Pousser les side effects aux bords de notre code.
 
-Note:
-
-Demo ->
-```js
-getData().then(app)
+<aside class="notes"><p>Demo -&gt;</p>
+<pre><code class="lang-js">getData().then(app)
 
 const app = compose(
   render
   map(etc)
 )
-
-```
-
-
----
-
+</code></pre>
+</aside></script></section><section  data-markdown><script type="text/template">
 #### Flow d'un code functional
 
 
@@ -773,9 +664,7 @@ _
 ```
 Computation = la logique de notre app
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Flow d'un code functional
 
 
@@ -788,9 +677,7 @@ _
 
 Ca vous rappelle pas quelque chose ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Flow d'un code functional
 
 
@@ -801,9 +688,7 @@ Ca vous rappelle pas quelque chose ?
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ```
 
     view(controller(model()))
@@ -816,50 +701,38 @@ Mais on a bien nos trois parties
 
 les **données**, le **traitement** et la **vue**.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   composition
 </h2>
 
 
 <!-- .slide: data-background="http://i.giphy.com/mGj3SVN7xbPQ4.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Mais qu'est ce donc ?
 
 > Soit deux fonction `f(x)` et `g(x)`
 
 > leur function composée est `f(g(x))`
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   des maths :(
 </h2>
 
 
 <!-- .slide: data-background="resources/DontFearTheMonad.png" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ##  Mais non !
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   des legos ! :)
 </h2>
 
 
 <!-- .slide: data-background="resources/lego.jpg" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Je m'explique
 
 L'idée est de connecter les functions entre elles
@@ -881,9 +754,7 @@ console.log(sixtuple(7))
 
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 Pareil que
 
 ```js
@@ -897,9 +768,7 @@ console.log(sixtuple(7))
 
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 Pareil que
 
 ```js
@@ -913,32 +782,24 @@ console.log(sixtuple(7))
 // 42
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Composition
 
 Comme si on emboitait des légos !
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 > “The way to control Complexity
 
 >is Compositionality.”
 
 Brian Beckman: [Don't Fear The Monad](https://www.youtube.com/watch?v=ZhuHCtR3xq8)
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### (Parenthèse)
 
 ### Hindley-Milner Type Notation
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Hindley-Milner Type Notation
 
 Signature de function qui décrit son type
@@ -950,9 +811,7 @@ Signature de function qui décrit son type
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Hindley-Milner Type Notation
 
 ```hs
@@ -962,9 +821,7 @@ _
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Je l'ai pas inventé !
 
 Il y a même un moteur de recherche pour ça :
@@ -975,9 +832,7 @@ Il y a même un moteur de recherche pour ça :
 
 Haskell Function Search Engine
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Hindley-Milner Type Notation
 
 C'est très pratique pour composer des functions.
@@ -997,9 +852,7 @@ compose(isGreaterThanTen, length)
 ```
 ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Hindley-Milner Type Notation
 
 
@@ -1017,18 +870,14 @@ donc
 isLengthGreaterThanTen :: String -> Bool
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### la composition
 
 ## Le problème
 
 >comment on fait quand les functions prènnent plusieurs arguments ?
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   curry
 </h2>
@@ -1038,17 +887,13 @@ isLengthGreaterThanTen :: String -> Bool
 
 
 <!-- .slide: data-background="resources/curry.jpg" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Le Currying
 
 > une fonction curriée est une function qui, lorsqu'on ne lui donne pas tous ses
  paramètres, renvoie une function qui prendra le reste.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Le Currying
 
 
@@ -1066,9 +911,7 @@ curriedSumOfFour(1)
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Le Currying
 
 Presque pas besoin :
@@ -1085,9 +928,7 @@ en ES6, les `arrow functions` facilitent la syntaxe
 
 des functions qui retournent des functions.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Le Currying
 
 Mais la function `curry` nous permet de passer
@@ -1109,9 +950,7 @@ sumOfFour(1, 2)
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### (Parenthèse)
 
 <h2>
@@ -1119,9 +958,7 @@ _
   <span style="text-transform: capitalize !important;">Curry </span>
 </h2>
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h1 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   T.P.
 </h1>
@@ -1132,45 +969,33 @@ _
 
 
 <!-- .slide: data-background="http://i.giphy.com/oZmk8DX9H0foA.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### reprenons
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
   Des données immutables
 </h2>
 
 
 <!-- .slide: data-background="resources/statue.jpg" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Des données immutables
 
 > En functional programming lorsque l'on assigne une variable, ça veut dire
 qu'elle ne changera plus jamais.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Des données immutables
 
 Les données immutables c'est bien
 
 parce ce que ça supprime de l'incertitude.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Incertitude = Bug
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### (Parenthèse)
 
 l'utilisation de `const` ne rend pas la donnée immutable.
@@ -1179,9 +1004,7 @@ Cela empèche juste que la variable puisse être ré-assignée.
 
 Ou pourra toujours modifier les items d'un array ou les clés d'un objet.
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Des données immutables
 
 Comment éviter de mutter un tableau ?
@@ -1206,9 +1029,7 @@ modifier un item :
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Des données immutables
 
 Comment éviter de mutter un object ?
@@ -1225,9 +1046,7 @@ Comment éviter de mutter un object ?
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Des données immutables
 
 ### Les lens
@@ -1248,38 +1067,28 @@ set(lens, value, dataStructure)
 _
 ```
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Des données immutables
 
 Immutable.js
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 # Bientôt fini !
 ## plus que Les Setoid,
 ### Les Semigroup, Les Monoid, Les Functor,
 #### Les Apply, Les Applicative, Les Foldable, Les Traversable,
 ##### Les Chain, Les Monad, Les Extend, Les Comonad ...
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 
 
 <!-- .slide: data-background="http://i.giphy.com/11RUijoqnc1yJW.gif" -->
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Merci
 
 #### de votre attention
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Ressources
 - [Eric Elliott - The Two pillars of Javascript - Part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.507emzobw)
 
@@ -1295,11 +1104,62 @@ Immutable.js
 
 - [functinal programming en PHP (no joke)](http://www.phptherightway.com/pages/Functional-Programming.html)
 
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 Mon ptit nom c'est **Gabriel Vergnaud**
 
 - [@gvergnaud on Github](https://github.com/gvergnaud)
 - [@gabrielvergnaud on Twitter](https://twitter.com/GabrielVergnaud)
 - [LinkedIn](https://www.linkedin.com/in/gabriel-vergnaud-09446199)
+</script></section></div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
