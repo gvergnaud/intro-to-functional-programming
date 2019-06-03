@@ -13,18 +13,86 @@ revealOptions:
 
 ---
 
-##  Objectifs
+## 👋
 
-- Comprendre ce qui se cache sous le terme "Functional"
+**Gabriel Vergnaud**
 
-- Donner des pistes à explorer
+Héticien de la P2017
 
+<div class="flex">
+  <span>Frontend engineer at&nbsp;</span><img src="resources/logo-sketchfab.png" class="simple-image" style="width:200px" />
+</div>
+
+<div class="flex">
+[@gvergnaud](https://github.com/gvergnaud)<span>&nbsp;on&nbsp;</span><img
+  src="resources/logo-github.png"
+  class="simple-image"
+  style="width:50px;" />
+</div>
+
+<div class="flex">
+[@GabrielVergnaud](https://twitter.com/GabrielVergnaud)<span>&nbsp;on&nbsp;</span><img
+  src="resources/logo-twitter.png"
+  class="simple-image"
+  style="width:50px;" />
+</div>
+
+Note:
+- Qui suis je ?
+  - gabriel vergnaud
+  - Heticien P2017
+  - developer à Sketchfab.com (On recrute!)
+  - gvergnaud on github
+  - GabrielVergnaud on twitter
 
 ---
 
-## Petites questions
-(vite fait)
 
+## 👀
+<p class="fragment">Qui êtes vous ?</p>
+
+
+Note:
+- Qui etes vous ?
+  - Techno utilisée ?
+  - quels projets ?
+  - plutot agence / produits ?
+  - Dev back vs dev front ?
+
+---
+
+J'étais sensé vous parler de **React**...
+
+<small class="fragment">Mais d'abord...</small>
+
+Note:
+
+J'ai beaucoup hésité, j'ai préparé un cours sur react au début et tout 
+
+Mais je me suis rendu compte que pour vous parler de ce dont je dois vous parler je dois introduire
+un certain nombre de concepts.
+
+---
+
+Un peu de ***théorie***
+
+---
+
+<img src="https://media.giphy.com/media/APqEbxBsVlkWSuFpth/giphy.gif" />
+
+---
+
+### Une petite introduction au
+## Functional Programming
+
+<p style="font-size:.7em">Slides: https://gvergnaud.github.io/intro-to-functional-programming</p>
+
+---
+
+##  Objectifs 🗺
+
+- Comprendre ce qui se cache sous le terme *functional programming*
+- Donner des pistes à explorer
 
 ---
 
@@ -38,27 +106,22 @@ revealOptions:
 
 ---
 
-- de nouveaux frameworks tous les ans
+<p class="fragment">De nouveaux frameworks tous les ans</p>
 
-- ceux des années précédentes deviennent obsolètes
+<p class="fragment">Ceux des années précédentes deviennent obsolètes</p>
 
-- Que doit on apprendre qui nous serve à long terme ?
-
-
----
-
-## C'est JS-Fatiguant ?
+<p class="fragment">Que doit on apprendre qui nous serve à long terme ?</p>
 
 
 ---
 
 ## Solution
 
-- Arrêter de passer du temps à apprendre des **API**
+<p class="fragment">Arrêter de passer du temps à apprendre des **API**</p>
 
-- Mieux comprendre les fondamentaux du langage
+<p class="fragment">Mieux comprendre les fondamentaux du langage</p>
 
-- Se concentrer sur les **design patterns**
+<p class="fragment">Se concentrer sur les **design patterns**</p>
 
 
 ---
@@ -141,15 +204,15 @@ Ruby, Python, ..., même PHP !
 
 ---
 
-Préférer un style **déclaratif** à un style impératif
+<p class="fragment">Préférer un style **déclaratif** à un style impératif</p>
 
-+
+<p class="fragment">+</p>
 
-découper son code en petites **fonctions** réutilisables et composables.
+<p class="fragment">découper son code en petites **fonctions** réutilisables et composables.</p>
 
-+
+<p class="fragment">+</p>
 
-Ne **jamais** mutter les données
+<p class="fragment">Ne **jamais** mutter les données</p>
 
 
 Note:
@@ -182,7 +245,7 @@ console.log(oldUsers)
 ```
 
 
-Oulala qu'est ce que ça micromanage
+<p class="fragment">Oulala qu'est ce que ça micromanage</p>
 
 
 Note:
@@ -263,7 +326,7 @@ function filter(predicate, xs) {
 ```
 
 
-filter est ce qu'on appelle une **Higher Order Function**
+<p class="fragment">`filter` est ce qu'on appelle une **Higher Order Function**</p>
 
 
 ---
@@ -285,12 +348,11 @@ filter est ce qu'on appelle une **Higher Order Function**
 
 Une fonction qui :
 
-- va **abstraire** un bout de code **générique**
+<p class="fragment">va **abstraire** un bout de code **générique**</p>
 
-- va prendre une autre fonction en paramètre
+<p class="fragment">va prendre une **autre** fonction en paramètre</p>
 
-
-cette deuxième fonction va **décrire** le comportement **spécifique** de la première.
+<p class="fragment">qui **décrit** le comportement **spécifique** de notre code.</p>
 
 
 ---
@@ -1311,3 +1373,59 @@ Mon ptit nom c'est **Gabriel Vergnaud**
 - [@gvergnaud on Github](https://github.com/gvergnaud)
 - [@gabrielvergnaud on Twitter](https://twitter.com/GabrielVergnaud)
 - [LinkedIn](https://www.linkedin.com/in/gabriel-vergnaud-09446199)
+
+
+<style>
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex > *:not(:first-child) {
+    margin-left: 10px
+  }
+
+  img.simple-image.simple-image {
+    border:none;
+    box-shadow:none;
+    background: none;
+  }
+
+  .white.white.white {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0, .5);
+  }
+
+  .lower.lower.lower {
+    text-transform: none;
+  }
+
+  .reveal {
+    font-size: 32px;
+  }
+
+  .reveal small {
+    font-size: 0.7em;
+  }
+
+  .reveal pre {
+    border-radius: 5px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,.25);
+  }
+
+  .reveal section img {
+    border: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)
+  }
+
+  .reveal pre code {
+    padding: 30px;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+
+  .reveal code {
+    font-weight: bold;
+  }
+</style>
