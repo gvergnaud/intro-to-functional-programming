@@ -616,6 +616,10 @@ nos boucles sont spécifiquement faite pour notre problème actuel.
 
 ---
 
+<iframe src="https://codesandbox.io/embed/exercice-fp-declarative-vs-imperative-lrion?fontsize=14&view=editor" title="Exercice FP declarative vs imperative" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
 ## II
 ## Des petites functions réutilisables
 
