@@ -1,3 +1,11 @@
+---
+title: Intro To Functional Programming
+theme: solarized
+highlightTheme: atom-one-dark
+revealOptions:
+    transition: 'slide'
+---
+
 ### Une petite introduction au
 ## Functional Programming
 
@@ -125,7 +133,7 @@ Ruby, Python, ..., même PHP !
 
 
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
-  Ok mais c'est quoi ? 
+  Ok mais c'est quoi ?
 </h2>
 
 
