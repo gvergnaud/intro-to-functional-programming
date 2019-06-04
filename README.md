@@ -61,6 +61,24 @@ Note:
 
 ---
 
+### Objectif de cette semaine
+
+Note:
+Quel genre de cours de dev j'avais besoin et envie quand j'étais en H3 ?
+appris en auto-didacte. Connaissances empirique
+Je faisais des applications de plus en plus complexe, mais il arrivé toujours un
+moment ou cette complexité devenait un peu hors de control. ça devenait compliqué d'ajouter
+des features sans créer des bugs, le code devenait difficile à lire...
+
+J'avais envie d'approfondir mes connaissances pour éviter de tomber dans 
+ces pièges. -> L'architecture d'application.
+
+Au dela de react, a travers les quelques jours de cours que j'ai avec vous, j'ai envie de 
+vous transmettre ce que j'ai découvert ces dernières années en matière
+d'architecture d'application.
+
+---
+
 J'étais sensé vous parler de **React**...
 
 <small class="fragment">Mais d'abord...</small>
@@ -79,6 +97,11 @@ Un peu de ***théorie***
 ---
 
 <img src="https://media.giphy.com/media/APqEbxBsVlkWSuFpth/giphy.gif" />
+
+Note:
+
+ça fait peur, mais c'est cette partie *science* dans computer science qui fait qu'on fait
+un métier digne d'intérêt et que l'on est pas des machines. Il faut pas avoir peur de la théorie.
 
 ---
 
