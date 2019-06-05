@@ -20,16 +20,93 @@
 
 <p style="font-size:.7em">Slides: https://gvergnaud.github.io/intro-to-functional-programming</p>
 </script></section><section  data-markdown><script type="text/template">
-##  Objectifs
+## 👋
 
-- Comprendre ce qui se cache sous le terme "Functional"
+**Gabriel Vergnaud**
 
-- Donner des pistes à explorer
+Héticien de la P2017
 
+<div class="flex">
+  <span>Frontend engineer at&nbsp;</span><img src="resources/logo-sketchfab.png" class="simple-image" style="width:200px" />
+</div>
+
+<div class="flex">
+[@gvergnaud](https://github.com/gvergnaud)<span>&nbsp;on&nbsp;</span><img
+  src="resources/logo-github.png"
+  class="simple-image"
+  style="width:50px;" />
+</div>
+
+<div class="flex">
+[@GabrielVergnaud](https://twitter.com/GabrielVergnaud)<span>&nbsp;on&nbsp;</span><img
+  src="resources/logo-twitter.png"
+  class="simple-image"
+  style="width:50px;" />
+</div>
+
+<aside class="notes"><ul>
+<li>Qui suis je ?<ul>
+<li>gabriel vergnaud</li>
+<li>Heticien P2017</li>
+<li>developer à Sketchfab.com (On recrute!)</li>
+<li>gvergnaud on github</li>
+<li>GabrielVergnaud on twitter</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+
+## 👀
+<p class="fragment">Qui êtes vous ?</p>
+
+
+<aside class="notes"><ul>
+<li>Qui etes vous ?<ul>
+<li>Techno utilisée ?</li>
+<li>quels projets ?</li>
+<li>plutot agence / produits ?</li>
+<li>Dev back vs dev front ?</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+### Objectif de cette semaine
+
+<aside class="notes"><p>Quel genre de cours de dev j&#39;avais besoin et envie quand j&#39;étais en H3 ?
+appris en auto-didacte. Connaissances empirique
+Je faisais des applications de plus en plus complexe, mais il arrivé toujours un
+moment ou cette complexité devenait un peu hors de control. ça devenait compliqué d&#39;ajouter
+des features sans créer des bugs, le code devenait difficile à lire...</p>
+<p>J&#39;avais envie d&#39;approfondir mes connaissances pour éviter de tomber dans 
+ces pièges. -&gt; L&#39;architecture d&#39;application.</p>
+<p>Au dela de react, a travers les quelques jours de cours que j&#39;ai avec vous, j&#39;ai envie de 
+vous transmettre ce que j&#39;ai découvert ces dernières années en matière
+d&#39;architecture d&#39;application.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+J'étais sensé vous parler de **React**...
+
+<small class="fragment">Mais d'abord...</small>
+
+<aside class="notes"><p>J&#39;ai beaucoup hésité, j&#39;ai préparé un cours sur react au début et tout </p>
+<p>Mais je me suis rendu compte que pour vous parler de ce dont je dois vous parler je dois introduire
+un certain nombre de concepts.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Un peu de ***théorie***
 </script></section><section  data-markdown><script type="text/template">
-## Petites questions
-(vite fait)
+<img src="https://media.giphy.com/media/APqEbxBsVlkWSuFpth/giphy.gif" />
 
+<aside class="notes"><p>ça fait peur, mais c&#39;est cette partie <em>science</em> dans computer science qui fait qu&#39;on fait
+un métier digne d&#39;intérêt et que l&#39;on est pas des machines. Il faut pas avoir peur de la théorie.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### Une petite introduction au
+## Functional Programming
+
+<p style="font-size:.7em">Slides: https://gvergnaud.github.io/intro-to-functional-programming</p>
+</script></section><section  data-markdown><script type="text/template">
+##  Objectifs 🗺
+
+- Comprendre ce qui se cache sous le terme *functional programming*
+- Donner des pistes à explorer
 </script></section><section  data-markdown><script type="text/template">
 
 <h2 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
@@ -39,23 +116,20 @@
 
 <!-- .slide: data-background="http://i.giphy.com/1M9fmo1WAFVK0.gif" -->
 </script></section><section  data-markdown><script type="text/template">
-- de nouveaux frameworks tous les ans
+<p class="fragment">De nouveaux frameworks tous les ans</p>
 
-- ceux des années précédentes deviennent obsolètes
+<p class="fragment">Ceux des années précédentes deviennent obsolètes</p>
 
-- Que doit on apprendre qui nous serve à long terme ?
-
-</script></section><section  data-markdown><script type="text/template">
-## C'est JS-Fatiguant ?
+<p class="fragment">Que doit on apprendre qui nous serve à long terme ?</p>
 
 </script></section><section  data-markdown><script type="text/template">
 ## Solution
 
-- Arrêter de passer du temps à apprendre des **API**
+<p class="fragment">Arrêter de passer du temps à apprendre des **API**</p>
 
-- Mieux comprendre les fondamentaux du langage
+<p class="fragment">Mieux comprendre les fondamentaux du langage</p>
 
-- Se concentrer sur les **design patterns**
+<p class="fragment">Se concentrer sur les **design patterns**</p>
 
 </script></section><section  data-markdown><script type="text/template">
 <h3 style="color: white !important; text-shadow: 0px 3px 15px rgba(0,0,0,.5)">
@@ -122,15 +196,15 @@ Ruby, Python, ..., même PHP !
 
 <!-- .slide: data-background="http://i.giphy.com/cx5UoGpRwLra0.gif" -->
 </script></section><section  data-markdown><script type="text/template">
-Préférer un style **déclaratif** à un style impératif
+<p class="fragment">Préférer un style **déclaratif** à un style impératif</p>
 
-+
+<p class="fragment">+</p>
 
-découper son code en petites **fonctions** réutilisables et composables.
+<p class="fragment">découper son code en petites **fonctions** réutilisables et composables.</p>
 
-+
+<p class="fragment">+</p>
 
-Ne **jamais** mutter les données
+<p class="fragment">Ne **jamais** mutter les données</p>
 
 
 <aside class="notes"><p>Ça permet de monter facilement en abstraction et d’arreter de tout micro manager.</p>
@@ -157,7 +231,7 @@ console.log(oldUsers)
 ```
 
 
-Oulala qu'est ce que ça micromanage
+<p class="fragment">Oulala qu'est ce que ça micromanage</p>
 
 
 <aside class="notes"><p>Micro management =</p>
@@ -227,7 +301,7 @@ function filter(predicate, xs) {
 ```
 
 
-filter est ce qu'on appelle une **Higher Order Function**
+<p class="fragment">`filter` est ce qu'on appelle une **Higher Order Function**</p>
 
 </script></section><section  data-markdown><script type="text/template">
 ## Higher Order Function
@@ -245,12 +319,11 @@ filter est ce qu'on appelle une **Higher Order Function**
 
 Une fonction qui :
 
-- va **abstraire** un bout de code **générique**
+<p class="fragment">va **abstraire** un bout de code **générique**</p>
 
-- va prendre une autre fonction en paramètre
+<p class="fragment">va prendre une **autre** fonction en paramètre</p>
 
-
-cette deuxième fonction va **décrire** le comportement **spécifique** de la première.
+<p class="fragment">qui **décrit** le comportement **spécifique** de notre code.</p>
 
 </script></section><section  data-markdown><script type="text/template">
 ### Je vous ai menti
@@ -477,6 +550,8 @@ nos boucles sont spécifiquement faite pour notre problème actuel.
 
 ### Parser de la NASA !
 
+</script></section><section  data-markdown><script type="text/template">
+<iframe src="https://codesandbox.io/embed/exercice-fp-declarative-vs-imperative-lrion?fontsize=14&view=editor" title="Exercice FP declarative vs imperative" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 </script></section><section  data-markdown><script type="text/template">
 ## II
 ## Des petites functions réutilisables
@@ -1112,6 +1187,62 @@ Mon ptit nom c'est **Gabriel Vergnaud**
 - [@gvergnaud on Github](https://github.com/gvergnaud)
 - [@gabrielvergnaud on Twitter](https://twitter.com/GabrielVergnaud)
 - [LinkedIn](https://www.linkedin.com/in/gabriel-vergnaud-09446199)
+
+
+<style>
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex > *:not(:first-child) {
+    margin-left: 10px
+  }
+
+  img.simple-image.simple-image {
+    border:none;
+    box-shadow:none;
+    background: none;
+  }
+
+  .white.white.white {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0, .5);
+  }
+
+  .lower.lower.lower {
+    text-transform: none;
+  }
+
+  .reveal {
+    font-size: 32px;
+  }
+
+  .reveal small {
+    font-size: 0.7em;
+  }
+
+  .reveal pre {
+    border-radius: 5px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,.25);
+  }
+
+  .reveal section img {
+    border: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)
+  }
+
+  .reveal pre code {
+    padding: 30px;
+    border-radius: 5px;
+    font-weight: normal;
+  }
+
+  .reveal code {
+    font-weight: bold;
+  }
+</style>
 </script></section></div>
     </div>
 
