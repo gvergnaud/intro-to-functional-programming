@@ -649,10 +649,24 @@ nos boucles sont spécifiquement faite pour notre problème actuel.
 
 ---
 
-### fonction pure
+fonctions **pures** et **impures**
 
->une fonction pure (ou stateless) est une fonction qui respecte quelques petites règles.
+<small class="fragment">Une fonction pure ne produit **pas de side effect**.</small>
+<br>
+<small class="fragment">Une fonction pure retourne le **même resultat** si on lui donne les **mêmes arguments**.</small>
+<br>
+<small class="fragment">Une fonction pure est une fonction au sens **mathématique** du terme.</small>
 
+Note:
+
+  - Dans le monde de la programmation fonctionelle on appelle ça du code Impure
+    - Une fonction pure n'a pas de side effect et donne le même résultat si on lui donne le arguments.
+    - on dit qu'elle est *référentiellement transparente* (referencial transparency).
+
+---
+
+<p class="white fragment">I hate maths</p>
+<!-- .slide: data-background="https://media.giphy.com/media/c2hWr2HAJ7VOE/giphy.gif" -->
 
 ---
 
@@ -665,7 +679,9 @@ prend des paramètres et retourne un résultat
 const add = (a, b) => a + b
 add(2, 2)
 // => 4
+```
 
+```js
 // Impure
 const add = (a, b, cb) => {
   cb(a + b)
@@ -688,8 +704,9 @@ n'altère pas les paramètres qui lui sont passés
 const addValue = (arr, v) => arr.concat(v)
 addValue([1, 2, 3], 4)
 // => [1, 2, 3, 4]
+```
 
-
+```js
 // Impure
 const addValue = (arr, v) => {
   arr.push(v)
@@ -707,7 +724,7 @@ addValue(myArray, 4)
 
 #### une fonction pure
 
-n'intéragit pas avec le scope dans lequel elle se trouve
+ne produit pas de side effect
 
 ```js
 const number = 3
@@ -716,21 +733,21 @@ const number = 3
 const isOdd = x => !(x % 2)
 isOdd(number)
 // => true
+```
 
+```js
 // Impure
-const isOdd = () => !(number % 2)
-isOdd()
-// => true
+let isNumberOdd;
+const isOdd = () => {
+  isNumberOdd = !(number % 2)
+}
 
+isOdd() // => undefined
+console.log(isNumberOdd) // => true
 ```
 
 
 ---
-
-#### une fonction pure
-
-n'a pas d'effet de bord
-
 
 ```js
 // Impure
@@ -739,19 +756,31 @@ const getUsers = (callback) => {
 }
 ```
 
-
 ---
 
 ### Pourquoi c'est chouette ?
 
 
-Pour les mêmes arguments données la function retournera **toujours** la même chose. On peut Memoize!
+<small class="fragment">
+On peut **tout comprendre** juste en regardant le contenu de la fonction
+<br/>
+car elle ne dépend pas du monde extérieur.
+</small>
+
+<small class="fragment">Un comportement **consistant**, donc moins de bugs.</small>
+
+<small class="fragment">
+Puisqu'une fonction pure retourne le **même resultat** si on lui donne les **mêmes arguments**,
+<br/>
+On peut **memoize** le resultat!
+</small>
+
+<small class="fragment">
+**memoize** est une manière d'optimiser les performances en gardant le resultat en mémoire pour **éviter de ré-executer** le code si la fonction est appelée avec les **mêmes arguments**. 
+</small>
 
 
-Facile à **comprendre** car pas de dépendences externes.
 
-
-Pas de comportement chelou.
 
 
 ---
@@ -762,39 +791,31 @@ Pas de comportement chelou.
 
 ---
 
-#### function pure
+### Ptit test
 
-## Fonction as Data
+
 
 
 ---
-
-### Ptit test
-
 
 ```js
 const isThisPure = x => x * 2
 ```
 
-alors ? pure ou pas pure ?
+<p class="fragment">alors ? pure ou pas pure ?</p>
 
+<p class="fragment">Pure</p>
 
 ---
-
-#### Ptit test
-
 
 ```js
 const isThisPure = str => {
 	window.title = str
 }
 ```
-
+<p class="fragment">Impure</p>
 
 ---
-
-#### Ptit test
-
 
 ```js
 const isThisPure = str => {
@@ -802,7 +823,8 @@ const isThisPure = str => {
 	return () => window.title = title
 }
 ```
-
+<p class="fragment">Pure</p>
+<small class="fragment">Retourner une fonction impure sans l'exécuter ne rend pas la fonction impure.</small>
 
 ---
 
@@ -818,11 +840,14 @@ const isThisPure = str => {
 
 Ce qui nous intéresse dans un programme c'est les side effects.
 
-- Render quelque chose sur la page
-- Réagir à des events
-- Écrire dans une db
+<p class="fragment">**Afficher** quelque chose sur la page</p>
 
-On va pas loin avec des fonctions pures.
+<p class="fragment">**Réagir** à des events</p>
+
+<p class="fragment">**Écrire** dans une base de données</p>
+
+<p class="fragment">On va pas loin avec des fonctions pures.</p>
+
 
 
 ---
@@ -834,13 +859,11 @@ Mais les side effects sont aussi les plus susceptibles de bugger.
 
 ### Flow d'un code functional
 
-```
-
+```hs
     SideEffect -> Pure -> SideEffect
-_
 ```
 
-Pousser les side effects aux bords de notre code.
+<p class="fragment">Pousser les side effects aux **extrémités** de notre code.</p>
 
 Note:
 
@@ -858,60 +881,34 @@ const app = compose(
 
 ---
 
-#### Flow d'un code functional
-
-
 Par exemple :
 
-```
-
+```hs
     GetData -> Computation -> Render
-_
 ```
-Computation = la logique de notre app
+<p class="fragment">Computation : la **logique** de notre app</p>
 
 
 ---
 
-#### Flow d'un code functional
 
-
-
+```js
+const app = () => render(compute(getData()))
 ```
 
-    render(compute(getData()))
-_
-```
-
-Ca vous rappelle pas quelque chose ?
+<p class="fragment">Ca vous rappelle pas quelque chose ?</p>
 
 
 ---
 
-#### Flow d'un code functional
 
-
-
+```js
+const app = () => view(controller(model()))
 ```
 
-    view(controller(model()))
-_
-```
+<p class="fragment">On retrouve les trois parties du model **MVC**</p>
 
-
----
-
-```
-
-    view(controller(model()))
-_
-```
-
-Bon c'est un peu tiré par les cheveux.
-
-Mais on a bien nos trois parties
-
-les **données**, le **traitement** et la **vue**.
+<p class="fragment">les **données**, le **traitement** et la **vue**.</p>
 
 
 ---
@@ -1434,6 +1431,7 @@ Mon ptit nom c'est **Gabriel Vergnaud**
 
   .reveal small {
     font-size: 0.7em;
+    line-height: 1.5;
   }
 
   .reveal pre {
