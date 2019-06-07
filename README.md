@@ -1229,6 +1229,10 @@ _
 
 ---
 
+<iframe src="https://codesandbox.io/embed/exercice-fp-declarative-vs-imperative-46rr9?fontsize=14&view=editor" title="Exercice FP curry and compose" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+
+---
+
 #### reprenons
 
 
